@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Estadistica</title>
+</head>
+<body>
+    <header>
+        <div class="text-input">
+            <h1>Ingresar la cadena</h1>
+            <textarea id="input"></textarea>
+        </div>
+        <div class="buttons">
+            <button onclick="borrarNumeros()">Borrar numeros</button>
+            <button onclick="calcularEstadistica()">Enviar</button>
+        </div>
+    </header>
+    <section id="resultado">
+        <h1>Resultado</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Número</th>
+                    <th>Frecuencia</th>
+                    <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+    </section>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
